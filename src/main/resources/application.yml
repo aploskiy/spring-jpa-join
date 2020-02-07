@@ -1,0 +1,22 @@
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    jpajoin: DEBUG
+
+spring:
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:test
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+  liquibase:
+    change-log: classpath:/db/db.changelog-master.xml
+    enabled: false
