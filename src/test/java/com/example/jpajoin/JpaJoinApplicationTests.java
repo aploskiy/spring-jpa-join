@@ -20,9 +20,9 @@ class JpaJoinApplicationTests {
 
     @Test
     void oneToOneTest() {
-        LOGGER.debug("===============ONE-TO-ONE-SQL=========================");
+        LOGGER.info("===============ONE-TO-ONE-SQL=========================");
         List<User> users = userRepository.findAll();
-        LOGGER.debug("===============ONE-TO-ONE-SQL=========================");
+        LOGGER.info("===============ONE-TO-ONE-SQL=========================");
     }
 
 }
