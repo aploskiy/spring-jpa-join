@@ -39,7 +39,7 @@ class JpaJoinApplicationTests {
     }
 
     @Test
-    void oneToManyTest() throws InterruptedException {
+    void oneToManyTest() {
         LOGGER.info("===============ONE-TO-MANY-ORIGINAL-SQL===================================");
         departmentRepositoryOriginal.findAll();
         LOGGER.info("===============NE-TO-MANY-ORIGINAL-SQL====================================");
