@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.DependsOn;
 
 import javax.sql.DataSource;
+import java.util.concurrent.TimeUnit;
 
 @SpringBootApplication
 public class JpaJoinApplication {
@@ -47,7 +48,7 @@ public class JpaJoinApplication {
                 .password(liquibaseProperties.getPassword()).build();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         SpringApplication.run(JpaJoinApplication.class, args);
     }
 

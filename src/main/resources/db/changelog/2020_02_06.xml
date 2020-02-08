@@ -32,4 +32,38 @@
         </insert>
     </changeSet>
 
+    <changeSet id="add_departments" author="aploskiy">
+        <insert tableName="department">
+            <column name="id" value="1"/>
+            <column name="name" value="Lohika"/>
+        </insert>
+        <insert tableName="department">
+            <column name="id" value="2"/>
+            <column name="name" value="N-IX"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="add_employees" author="aploskiy">
+        <insert tableName="employee">
+            <column name="id" value="1"/>
+            <column name="name" value="Ivan"/>
+            <column name="department_id" value="1"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="id" value="2"/>
+            <column name="name" value="Ira"/>
+            <column name="department_id" value="1"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="id" value="3"/>
+            <column name="name" value="Anton"/>
+            <column name="department_id" value="2"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="id" value="4"/>
+            <column name="name" value="Nazar"/>
+            <column name="department_id" value="2"/>
+        </insert>
+    </changeSet>
+
 </databaseChangeLog>

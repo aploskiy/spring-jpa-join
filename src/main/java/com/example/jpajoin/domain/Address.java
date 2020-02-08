@@ -4,9 +4,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Entity
-@Table
 @Data
+@Entity
 public class Address {
 
     @Id

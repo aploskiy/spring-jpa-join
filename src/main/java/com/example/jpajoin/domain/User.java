@@ -4,10 +4,9 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Entity
-@Table
 @Data
-@NamedEntityGraph(name = "joinAll", includeAllAttributes = true)
+@Entity
+@NamedEntityGraph(name = "User.joinAll", includeAllAttributes = true)
 public class User {
 
     @Id
